@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <title>Alura Challeger 1</title>
+</head>
+<body>
+
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+
+    <main class="main_container fade-in">
+        <div class="logo_container">
+            <img src="img/img1.png" alt="">
+        </div>
+        <section class="section_container">
+            <div class="btn-input_container">
+                <div class="input_container">
+                    <textarea id="input" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="alert_container">
+                    <img src="img/img2.png" alt="">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="buttons_container">
+                    <button class="btn_encrypt" id="btn_encrypt">Encriptar</button>
+                    <button class="btn_decrypt" id="btn_decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="aside_container" id="aside_container">
+            <div class="encrypt_container fade-in" id="encrypt_container">
+                <p class="worked_text" id="worked_text"></p>
+            </div>
+            <div class="disappear_container fade-in" id="disappear_container">
+                <div class="img_container">
+                    <img src="img/img3.png" alt="">
+                </div>
+                <div class="text_container">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="copy_container" id="copy_container">
+                <button class="btn_copy" id="btn_copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+</html>
